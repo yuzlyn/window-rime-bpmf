@@ -21,6 +21,7 @@
     excluded_types:
       - reverse_lookup
     opencc_config: t2tw.json
+    option_name: zh_hans
     tips: none
   punctuator/symbols:
     /happy:
