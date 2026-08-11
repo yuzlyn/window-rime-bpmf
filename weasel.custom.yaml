@@ -1,8 +1,46 @@
 customization:
   distribution_code_name: Weasel
   distribution_version: 0.17.4
-  generator: "Weasel::UIStyleSettings"
-  modified_time: "Sat Jul 11 11:26:45 2026"
+  generator: "Codex"
   rime_version: 1.13.1
+
 patch:
-  "style/color_scheme": lost_temple
+  preset_color_schemes/+:
+    Song:
+      name: "宋"
+      author: "Codex, palette provided by user"
+      back_color: 0x5A6647
+      border_color: 0x253D4A
+      candidate_text_color: 0xE3EDF2
+      comment_text_color: 0x253D4A
+      hilited_back_color: 0x5881A3
+      hilited_candidate_back_color: 0x5881A3
+      hilited_candidate_text_color: 0xE3EDF2
+      hilited_comment_text_color: 0xE3EDF2
+      hilited_label_color: 0xE3EDF2
+      hilited_text_color: 0xE3EDF2
+      label_color: 0x253D4A
+      shadow_color: 0x00000000
+      text_color: 0xE3EDF2
+  "style/color_scheme": Song
+  "style/font_face": "Noto Emoji, 更纱黑体 UI SC"
+  "style/label_font_face": "更纱黑体 UI SC"
+  "style/comment_font_face": "更纱黑体 UI SC"
+  "style/font_point": 13
+  "style/label_font_point": 11
+  "style/comment_font_point": 12
+  "style/horizontal": true
+  "style/inline_preedit": true
+  "style/layout/align_type": bottom
+  "style/layout/border": 1
+  "style/layout/spacing": 5
+  "style/layout/candidate_spacing": 20
+  "style/layout/hilite_spacing": 5
+  "style/layout/hilite_padding": 5
+  "style/layout/margin_x": 0
+  "style/layout/margin_y": 0
+  "style/layout/round_corner": 5
+  "style/layout/corner_radius": 10
+  "style/layout/shadow_radius": 0
+  "style/layout/shadow_offset_x": 0
+  "style/layout/shadow_offset_y": 0

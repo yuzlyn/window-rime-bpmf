@@ -1,6 +1,6 @@
 # window-rime-bpmf
 
-小狼毫 / Rime 的注音台湾正体配置，基于内置 `bopomofo_tw` 方案，额外加入 emoji 候选和 kaomoji 颜文字。
+小狼毫 / Rime 的注音台湾正体配置，基于内置 `bopomofo_tw` 方案，额外加入 emoji 候选、kaomoji 颜文字和「宋」瑞鹤图取色外观。
 
 > 说明：仓库名使用 `bpmf`，但当前小狼毫内置方案 ID 是 `bopomofo_tw`。因此补丁文件必须命名为 `bopomofo_tw.custom.yaml`，否则重新部署后会找不到方案，表现为只能输入拉丁字母。
 
@@ -9,7 +9,9 @@
 - 默认启用 `bopomofo_tw`
 - 为 `bopomofo_tw` 增加 emoji 候选开关
 - 在 `bopomofo_tw` 内直接用 `/happy`、`/sad` 等符号编码输入颜文字
-- 保留小狼毫外观补丁 `weasel.custom.yaml`
+- 使用小狼毫外观补丁 `weasel.custom.yaml`
+- 内置 `Song` 配色：青绿候选框、赭金高亮、米白文字、深褐边线
+- 去除候选框阴影，横排显示候选
 
 ## 安装
 
@@ -63,6 +65,25 @@
 /sad -> 〒▽〒 / ┬＿┬ / ＞﹏＜
 ```
 
+### 小狼毫外观
+
+`weasel.custom.yaml` 默认选择 `Song` 配色。色板来自瑞鹤图风格：
+
+```text
+#47665A  候选框背景
+#A38158  高亮候选背景
+#F2EDE3  编码、候选文字
+#4A3D25  边框、标签、注释
+```
+
+候选框阴影已关闭：
+
+```yaml
+"style/layout/shadow_radius": 0
+"style/layout/shadow_offset_x": 0
+"style/layout/shadow_offset_y": 0
+```
+
 ## 文件说明
 
 - `default.custom.yaml`：启用 `bopomofo_tw`
@@ -70,7 +91,7 @@
 - `kaomoji.schema.yaml`：颜文字独立方案
 - `kaomoji.dict.yaml`：颜文字码表
 - `opencc/`：emoji OpenCC 转换数据
-- `weasel.custom.yaml`：小狼毫外观补丁
+- `weasel.custom.yaml`：小狼毫「宋」外观补丁
 
 ## 来源
 
