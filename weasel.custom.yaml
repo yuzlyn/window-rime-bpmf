@@ -1,14 +1,14 @@
 customization:
   distribution_code_name: Weasel
   distribution_version: 0.17.4
-  generator: "Codex"
+  generator: "yuzlyn"
   rime_version: 1.13.1
 
 patch:
   preset_color_schemes/+:
     Song:
       name: "宋"
-      author: "Codex, palette provided by user"
+      author: "yuzlyn"
       back_color: 0x5A6647
       border_color: 0x253D4A
       candidate_text_color: 0xE3EDF2
